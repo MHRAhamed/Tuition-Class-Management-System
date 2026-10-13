@@ -68,11 +68,14 @@ $current_dir = basename(dirname($_SERVER['PHP_SELF']));
         <main class="main-content">
             <!-- Top Navbar -->
             <header class="top-navbar">
-                <button class="toggle-sidebar-btn" id="toggleSidebar">
+                <button class="toggle-sidebar-btn" id="toggleSidebar" title="Toggle Sidebar">
                     <i data-lucide="menu"></i>
                 </button>
                 
                 <div class="nav-right">
+                    <button class="theme-toggle-btn" id="themeToggle" title="Toggle Dark/Light Mode">
+                        <i data-lucide="moon" id="themeIcon"></i>
+                    </button>
                     <a href="/auth/logout.php" class="btn btn-secondary">
                         <i data-lucide="log-out" style="width: 18px; height: 18px;"></i>
                         Logout
