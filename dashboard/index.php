@@ -30,7 +30,14 @@ try {
 ?>
 
 <div class="page-header">
-    <h1 class="page-title">Dashboard Overview</h1>
+    <div>
+        <h1 class="page-title">Dashboard Overview</h1>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Welcome back! Here is a summary of your tuition center today.</p>
+    </div>
+    <div style="display: flex; gap: 10px;">
+        <a href="/attendance/mark.php" class="btn btn-primary"><i data-lucide="check-circle-2"></i> Mark Attendance</a>
+        <a href="/payments/add.php" class="btn btn-secondary"><i data-lucide="plus-circle"></i> Add Payment</a>
+    </div>
 </div>
 
 <div class="grid grid-cols-4" style="margin-bottom: 30px;">
