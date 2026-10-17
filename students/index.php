@@ -40,15 +40,19 @@ try {
 </div>
 
 <div class="card">
-    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-        <form method="GET" style="display: flex; gap: 10px; width: 300px;">
-            <input type="text" name="search" class="form-control" placeholder="Search students..." value="<?= htmlspecialchars($search) ?>" style="padding: 8px 12px; height: 38px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+        <form method="GET" style="display: flex; gap: 10px; width: 320px;">
+            <input type="text" name="search" class="form-control" placeholder="Search by name or phone..." value="<?= htmlspecialchars($search) ?>" style="padding: 8px 12px; height: 38px;">
             <button type="submit" class="btn btn-secondary" style="height: 38px;">Search</button>
         </form>
+        <div style="display: flex; gap: 10px; align-items: center;">
+            <input type="text" data-table-filter="#studentsTable" class="form-control" placeholder="⚡ Quick filter on page..." style="padding: 8px 12px; height: 38px; width: 220px;">
+            <span class="badge badge-success" style="padding: 8px 12px; font-weight: 500;">Total: <?= $total_records ?></span>
+        </div>
     </div>
 
     <div class="table-responsive">
-        <table class="table">
+        <table class="table" id="studentsTable">
             <thead>
                 <tr>
                     <th>ID</th>
