@@ -39,10 +39,13 @@ try {
 </div>
 
 <div class="card">
-    <h3 style="margin-bottom: 20px; font-size: 1.1rem;">Recent Payments</h3>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+        <h3 style="font-size: 1.1rem; margin: 0;">Recent Payments</h3>
+        <input type="text" data-table-filter="#paymentsTable" class="form-control" placeholder="⚡ Filter payments..." style="padding: 6px 12px; height: 36px; width: 220px;">
+    </div>
     
     <div class="table-responsive">
-        <table class="table">
+        <table class="table" id="paymentsTable">
             <thead>
                 <tr>
                     <th>Ref ID</th>
