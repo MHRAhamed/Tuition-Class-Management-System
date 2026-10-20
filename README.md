@@ -1,19 +1,20 @@
 # Tuition Class Management System
 
-**[🟢 Live Demo](https://tuitionclass.free.nf/auth/login.php)**
+**[🟢 Live Demo](https://your-live-link-here.com)**
 
 A modern, responsive, and easy-to-use Tuition Class Management System built with PHP, MySQL, HTML, CSS, and Vanilla JavaScript. It features a premium SaaS dashboard aesthetic, suitable for managing students, classes, attendance, and payments.
 
 ## Features
 
+- **Dark & Light Mode**: Seamless theme toggle with persistent preferences saved in localStorage.
 - **Authentication**: Secure admin login system using password hashes and session management.
-- **SaaS Dashboard**: A visually appealing dashboard with summary cards for total students, total classes, monthly revenue, attendance analytics, and a dynamic Chart.js income graph.
-- **Student Management**: Full CRUD operations for managing student profiles with a clean list, search, and pagination.
+- **SaaS Dashboard**: A visually appealing dashboard with quick-action shortcuts, summary cards for total students, total classes, monthly revenue, attendance analytics, and dynamic Chart.js income graphs.
+- **Student Management**: Full CRUD operations for managing student profiles with instant client-side table filtering, server search, and pagination.
 - **Class Management**: Easily add and organize tuition classes, keeping track of active enrollments.
 - **Attendance Tracking**: Rapid attendance marking UI, allowing you to quickly set students to Present or Absent with visual indicators, plus an attendance history summary.
 - **Fee Management**: Process student payments associated with a specific month/year and track historical income.
 - **Reports & Analytics**: Downloadable CSV reports of both student data and payment history directly from the reports tab.
-- **Premium UI**: Soft color palette (white, blue, light purple), nice drop shadows, Google Fonts (Inter), smooth hover transitions, and Lucide icons.
+- **Interactive UI Feedback**: Integrated toast notifications, subtle animations, soft color palettes, and modern Lucide icons.
 
 ## Technology Stack
 
